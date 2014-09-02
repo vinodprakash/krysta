@@ -5,34 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Xeon | OnePage Responsive Theme</title>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet">
-    <link href="css/main.css" rel="stylesheet">
+    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
+    <link href="stylesheets/prettyPhoto.css" rel="stylesheet">
+    <link href="stylesheets/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
     <![endif]-->
-    <link rel="shortcut icon" href="/images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/images/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 </head><!--/head-->
 
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
     <header id="header" role="banner">
         <div class="container">
             <div id="navbar" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/">--LOGO--</a>
+                </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#main-slider"><span><i class="icon-home"></i></span>></a></li>
+                        <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
                         <li><a href="#services">Events</a></li>
                         <li><a href="#portfolio">Gallery</a></li>
-                        <li><a href="#pricing">Workshop</a></li>
-                        <li><a href="#about-us">Aboutus</a></li>
-                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#workshop">Workshop</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#sponsors">Sponsors</a></li>
+                        <li><a href="#contact">Register</a></li>
                     </ul>
                 </div>
             </div>
@@ -44,16 +53,22 @@
             <div class="item active">
                 <div class="container">
                     <div class="carousel-content">
-                        <h1>Free Onepage Theme</h1>
-                        <p class="lead">Xeon is the best free onepage responsive theme available arround the globe<br>Download it right now for free</p>
+                        <h1>KRYSTA ‘14</h1>
+                        <p class="lead">Illuminating Obscurities<br>25 - 27 September 2014</p>
                     </div>
                 </div>
             </div><!--/.item-->
             <div class="item">
                 <div class="container">
                     <div class="carousel-content">
-                        <h1>ShapeBootstrap.net</h1>
-                        <p class="lead">Download free but 100% premium quaility twitter Bootstrap based WordPress and HTML themes <br>from shapebootstrap.net</p>
+                        <h1>KRYSTA ‘14</h1>
+                        <p class="lead">K - KNOW &
+                                        R - RECREATE <br>
+                                        Y - YOUR
+                                        S - SKILL,
+                                        T - TRAIT &
+                                        A - ACUMEN
+                        </p>
                     </div>
                 </div>
             </div><!--/.item-->
@@ -65,18 +80,11 @@
     <section id="services">
         <div class="container">
             <div class="box first">
-        <h1>Events</h1>
                 <div class="row">
-                       <h1>Events</h1>
-                 <div class="col-md-4 col-sm-6">
-                        <div class="center">
-                            <h4>Will Be Updated Soon!</h4>
-                        </div>
-                    </div><!--/.col-md-4-->
-                  <div class="col-md-4 col-sm-6">
-                        <div class="center">
-                        </div>
-                    </div><!--/.col-md-4-->
+                <div class="center gap">
+                    <h2>Events</h2>
+                </div>
+                    --Will Be Updated Soon--
                 </div><!--/.row-->
             </div><!--/.box-->
         </div><!--/.container-->
@@ -90,65 +98,186 @@
                 </div><!--/.center-->
                 <ul class="portfolio-filter">
                     <li><a class="btn btn-primary active" href="#" data-filter="*">All</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".bootstrap">Bootstrap</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".html">HTML</a></li>
-                    <li><a class="btn btn-primary" href="#" data-filter=".wordpress">Wordpress</a></li>
+                    <li><a class="btn btn-primary" href="#" data-filter=".gallery1">Gallery1</a></li>
+                    <li><a class="btn btn-primary" href="#" data-filter=".gallery2">Gallery2</a></li>
+                    <li><a class="btn btn-primary" href="#" data-filter=".gallery3">Gallery3</a></li>
+                    <li><a class="btn btn-primary" href="#" data-filter=".workshop">Workshop</a></li>
                 </ul><!--/#portfolio-filter-->
                 <ul class="portfolio-items col-4">
-                    <li class="portfolio-item apps">
+                    <li class="portfolio-item gallery1">
                         <div class="item-inner">
                             <div class="portfolio-image">
-                                <img src="/images/1/image7_big.jpg" alt="">
+                                <img src="images/gallery/full/item1.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item1.jpg"><i class="icon-eye-open"></i></a>             
+                                </div>
                             </div>
+                            <h5>--</h5>
                         </div>
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla bootstrap">
+                    <li class="portfolio-item gallery1">
                         <div class="item-inner">
                             <div class="portfolio-image">
-                                <img src="/images/1/image9_big.jpg" alt="">
+                                <img src="images/gallery/full/item2.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item2.jpg"><i class="icon-eye-open"></i></a>  
+                                </div>
                             </div> 
+                            <h5>--</h5>         
                         </div>
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item bootstrap wordpress">
+                    <li class="portfolio-item gallery1">
                         <div class="item-inner">
                             <div class="portfolio-image">
-                                <img src="/images/1/image10_big.jpg" alt="">
+                                <img src="images/gallery/full/item3.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item3.jpg"><i class="icon-eye-open"></i></a>        
+                                </div> 
                             </div>
+                            <h5>--</h5>          
                         </div>           
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla wordpress apps">
+                    <li class="portfolio-item gallery1">
                         <div class="item-inner">
                             <div class="portfolio-image">
-                                <img src="/images/1/image11_big.jpg" alt="">
+                                <img src="images/gallery/full/item4.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item4.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>   
                             </div>
+                            <h5>--</h5>        
                         </div>           
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla html">
+                    <li class="portfolio-item gallery1">
                         <div class="item-inner">
                             <div class="portfolio-image">
-                                <img src="/images/1/image12_big.jpg" alt="">
+                                <img src="images/gallery/full/item5.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item5.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>  
                             </div>
+                            <h5>--</h5>  
                         </div>       
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item wordpress html">
+                    <li class="portfolio-item gallery2">
                         <div class="item-inner">
                             <div class="portfolio-image">
-                                <img src="/images/2/IMG_4408.JPG" alt="">
+                                <img src="images/gallery/full/item6.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item6.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>  
                             </div>
+                            <h5>--</h5>         
                         </div>           
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item joomla html">
+                    <li class="portfolio-item gallery2">
                         <div class="item-inner">
                             <div class="portfolio-image">
-                                <img src="/images/2/IMG_4422.JPG" alt="">
+                                <img src="images/gallery/full/item7.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item7.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>  
                             </div>
+                            <h5>--</h5>  
                         </div>       
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item wordpress html">
+                    <li class="portfolio-item gallery3">
                         <div class="item-inner">
                             <div class="portfolio-image">
-                                <img src="/images/2/IMG_4480.JPG" alt="">
+                                <img src="images/gallery/full/item8.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item8.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
                             </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item gallery3">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/gallery/full/item9.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item9.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item gallery3">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/gallery/full/item10.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item10.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item gallery1">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/gallery/full/item11.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item11.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item gallery1">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/gallery/full/item12.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item12.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item gallery2">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/gallery/full/item13.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item13.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item gallery3">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/gallery/full/item14.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item14.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item gallery2">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/gallery/full/item15.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item15.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item workshop">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/gallery/full/item16.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/gallery/full/item16.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
                         </div>         
                     </li><!--/.portfolio-item-->
                 </ul>   
@@ -156,62 +285,27 @@
         </div><!--/.container-->
     </section><!--/#portfolio-->
 
-    <section id="pricing">
+    <section id="workshop">
         <div class="container">
             <div class="box">
                 <div class="center">
-                    <h2>See our Pricings</h2>
-                    <p class="lead">Pellentesque habitant morbi tristique senectus et netus et <br>malesuada fames ac turpis egestas.</p>
+                    <h2>Workshop</h2>
+                    <p class="lead">“Life is made of ever so many partings welded together” -  Charles Dickens<br><br>Learn about the science and art of industrial welding techniques as you build and expand your skills during the course of this one day workshop. Materialize the welder within you with the guest lectures to be given by reputed professionals in the field of welding. Become versed in welding techniques such as friction stir welding and gas tungsten arc welding with live demonstrations to be performed by experienced welders. Get a clear insight into the microstructural features of the weldment.</p>
+                    <a href="#contact" class="btn btn-success btn-lg">Click here to Register</a>
                 </div><!--/.center-->   
                 <div class="big-gap"></div>
-                <div id="pricing-table" class="row">
-                    <div class="col-sm-4">
-                        <ul class="plan">
-                            <li class="plan-name">Basic</li>
-                            <li class="plan-price">$29</li>
-                            <li>5GB Storage</li>
-                            <li>1GB RAM</li>
-                            <li>400GB Bandwidth</li>
-                            <li>10 Email Address</li>
-                            <li>Forum Support</li>
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
-                        </ul>
-                    </div><!--/.col-sm-4-->
-                    <div class="col-sm-4">
-                        <ul class="plan featured">
-                            <li class="plan-name">Standard</li>
-                            <li class="plan-price">$49</li>
-                            <li>10GB Storage</li>
-                            <li>2GB RAM</li>
-                            <li>1TB Bandwidth</li>
-                            <li>100 Email Address</li>
-                            <li>Forum Support</li>
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
-                        </ul>
-                    </div><!--/.col-sm-4-->
-                    <div class="col-sm-4">
-                        <ul class="plan">
-                            <li class="plan-name">Advanced</li>
-                            <li class="plan-price">$199</li>
-                            <li>30GB Storage</li>
-                            <li>5GB RAM</li>
-                            <li>5TB Bandwidth</li>
-                            <li>1000 Email Address</li>
-                            <li>Forum Support</li>
-                            <li class="plan-action"><a href="#" class="btn btn-primary btn-lg">Signup</a></li>
-                        </ul>
-                    </div><!--/.col-sm-4-->
-                </div> 
+                --
             </div> 
         </div>
-    </section><!--/#pricing-->
+    </section><!--/#workshop-->
 
     <section id="about-us">
         <div class="container">
             <div class="box">
                 <div class="center">
                     <h2>Meet the Team</h2>
-                    <p class="lead">the society of materials science & engineers and madras metallurgical society, under the guidance of department of mechanical engineering. ceg brings you the most savvy symposium ever....krysta'14. an adorable alloy of brain-racking and sense-pleasing events and an inter collegiate workshop on 'industrial welding process'. come...know your self...recreate your self</p>
+                    <p class="lead">Organized By<br>
+                    THE SOCIETY OF MATERIALS SCIENCE & ENGINEERS AND MADRAS METALLURGICAL SOCIETY, UNDER THE GUIDANCE OF DEPARTMENT OF MECHANICAL ENGINEERING. <br><br>CEG BRINGS YOU THE MOST SAVVY SYMPOSIUM EVER....KRYSTA'14. AN ADORABLE ALLOY OF BRAIN-RACKING AND SENSE-PLEASING EVENTS AND AN INTER COLLEGIATE WORKSHOP ON 'INDUSTRIAL WELDING PROCESS'.<br><br>COME...KNOW YOUR SELF...RECREATE YOUR SELF</p>
                 </div>
                 <div class="gap"></div>
                 <div id="team-scroller" class="carousel scale">
@@ -220,63 +314,225 @@
                             <div class="row">
                                 <div class="col-sm-4">
                                     <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="/images/face.jpg" alt="" ></p>
-                                        <h3>Prem Kumar R<small class="designation">General Secretary, SMSE. <br> Contact: 9487682729</small></h3>
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/missing.jpg" alt="" ></p>
+                                        <h3>Prem Kumar R<small class="designation">General Secretary, SMSE <br> 9487682729</small></h3>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="/images/face.jpg" alt="" ></p>
-                                        <h3>Bhoopathy B G<small class="designation">Student President, MMS. <br>Contact: 9445677569</small></h3>
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/missing.jpg" alt="" ></p>
+                                        <h3>Bhoopathy B G<small class="designation">Student President, MMS <br> 9445677569</small></h3>
                                     </div>
                                 </div>        
                                 <div class="col-sm-4">
                                     <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="/images/face.jpg" alt="" ></p>
-                                        <h3>Rajeshwara Rao R J<small class="designation">Industrial Affairs Secretary, SMSE. <br> Contact: 9841404075 </small></h3> <br>mail to :
-  													<a href="mailto:krysta@quanta.net.in">
-                    							     <span class="hidden-xs">krysta@quanta.net.in</span>
-                   									  </a>
-										
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/missing.jpg" alt="" ></p>
+                                        <h3>Rajeshwara Rao R J<small class="designation">Industrial Affairs Secretary, SMSE <br> 9841404075 <br> krysta@quanta.net.in</small></h3>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="member">
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/missing.jpg" alt="" ></p>
+                                        <h3>Lalith Kumar B<small class="designation">Workshop Coordinator <br> 9629161134 <br> workshop@quanta.net.in</small></h3>
                                     </div>
                                 </div>
                                 <div class="col-sm-4">
                                     <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="/images/face.jpg" alt="" ></p>
-                                        <h3>Lalith Kumar B<small class="designation">Workshop Coordinator.<br> Contact: 9629161134</small>
-                                         </h3><br>mail to :
-  													<a href="mailto:workshop@quanta.net.in">
-                    							     <span class="hidden-xs">workshop@quanta.net.in</span>
-                   									  </a>
+                                        <p><img class="img-responsive img-thumbnail img-circle" src="images/missing.jpg" alt="" ></p>
+                                        <h3>Gokul Ram E<small class="designation">Events Coordinator<br>9790748790<br>events@quanta.net.in</small></h3>
                                     </div>
-                                </div>   
-                                <div class="col-sm-4">
-                                    <div class="member">
-                                        <p><img class="img-responsive img-thumbnail img-circle" src="/images/face.jpg" alt="" ></p>
-                                        <h3>Gokul Ram E<small class="designation">Events Coordinator. <br> Contact: 9790748790</small></h3><br>mail to :
-  													<a href="mailto:events@quanta.net.in">
-                    							     <span class="hidden-xs">events@quanta.net.in</span>
-                   									  </a>
-                                    </div>
-                                </div>     
-                                
+                                </div>
                             </div>
                         </div>
-                        
                     </div>
-                    
+                    <a class="left-arrow" href="#team-scroller" data-slide="prev">
+                        <i class="icon-angle-left icon-4x"></i>
+                    </a>
+                    <a class="right-arrow" href="#team-scroller" data-slide="next">
+                        <i class="icon-angle-right icon-4x"></i>
+                    </a>
                 </div><!--/.carousel-->
             </div><!--/.box-->
         </div><!--/.container-->
     </section><!--/#about-us-->
+
+    <section id="sponsors">
+        <div class="container">
+            <div class="box">
+                <div class="center gap">
+                    <h2>Sponsor</h2>
+                </div><!--/.center-->
+                <ul class="portfolio-items col-4">
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item1.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item1.jpg"><i class="icon-eye-open"></i></a>             
+                                </div>
+                            </div>
+                            <h5>--</h5>
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item2.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item2.jpg"><i class="icon-eye-open"></i></a>  
+                                </div>
+                            </div> 
+                            <h5>--</h5>         
+                        </div>
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item3.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item3.jpg"><i class="icon-eye-open"></i></a>        
+                                </div> 
+                            </div>
+                            <h5>--</h5>          
+                        </div>           
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item4.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item4.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>           
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item5.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item5.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>  
+                            </div>
+                            <h5>--</h5>  
+                        </div>       
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item6.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item6.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>  
+                            </div>
+                            <h5>--</h5>         
+                        </div>           
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item7.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item7.jpg"><i class="icon-eye-open"></i></a>          
+                                </div>  
+                            </div>
+                            <h5>--</h5>  
+                        </div>       
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item8.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item8.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item9.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item9.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item10.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item10.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item11.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item11.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item12.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item12.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item13.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item13.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                    <li class="portfolio-item">
+                        <div class="item-inner">
+                            <div class="portfolio-image">
+                                <img src="images/sponsor/item14.jpg" alt="">
+                                <div class="overlay">
+                                    <a class="preview btn btn-danger" title="--" href="images/sponsor/item14.jpg"><i class="icon-eye-open"></i></a>           
+                                </div>   
+                            </div>
+                            <h5>--</h5>        
+                        </div>         
+                    </li><!--/.portfolio-item-->
+                </ul>   
+            </div><!--/.box-->
+        </div><!--/.container-->
+    </section><!--/#portfolio-->
 
     <section id="contact">
         <div class="container">
             <div class="box last">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Contact Form</h1>
-                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+                        <h1>Registration Form</h1>
                         <div class="status alert alert-success" style="display: none"></div>
                         <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
                             <div class="row">
@@ -292,12 +548,21 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-12">
+                                <div class="col-sm-6">
                                     <div class="form-group">
-                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
+                                        <input type="text" class="form-control" required="required" placeholder="Register number">
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
+                                        <input type="text" class="form-control" required="required" placeholder="College name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Department name">
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" required="required" placeholder="Mobile number">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="submit" class="btn btn-danger btn-lg">Register</button>
                                     </div>
                                 </div>
                             </div>
@@ -308,18 +573,18 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <address>
-                                    <strong>Twitter, Inc.</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                                    <strong>--</strong><br>
+                                    --<br>
+                                    --<br>
+                                    <abbr title="Phone">P:</abbr> --
                                 </address>
                             </div>
                             <div class="col-md-6">
                                 <address>
-                                    <strong>Twitter, Inc.</strong><br>
-                                    795 Folsom Ave, Suite 600<br>
-                                    San Francisco, CA 94107<br>
-                                    <abbr title="Phone">P:</abbr> (123) 456-7890
+                                    <strong>--</strong><br>
+                                    --<br>
+                                    --<br>
+                                    <abbr title="Phone">P:</abbr> --
                                 </address>
                             </div>
                         </div>
@@ -350,7 +615,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+                    &copy; 2014 <a target="_blank" href="http://quanta.net.in" title="quanta">Krysta</a>. All Rights Reserved.
                 </div>
                 <div class="col-sm-6">
                     <img class="pull-right" src="images/shapebootstrap.png" alt="ShapeBootstrap" title="ShapeBootstrap">
@@ -359,10 +624,10 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.isotope.min.js"></script>
-    <script src="js/jquery.prettyPhoto.js"></script>
-    <script src="js/main.js"></script>
+    <script src="javascripts/jquery.js"></script>
+    <script src="javascripts/bootstrap.min.js"></script>
+    <script src="javascripts/jquery.isotope.min.js"></script>
+    <script src="javascripts/jquery.prettyPhoto.js"></script>
+    <script src="javascripts/main.js"></script>
 </body>
 </html>
