@@ -52,4 +52,20 @@ jQuery(function($) {
 			return false;
 		});
 	});
+
+	$(window).load(function(){
+		$sponsor = $('.sponsor-items');
+		$sponsor.isotope({
+			itemSelector : 'li',
+			layoutMode : 'fitRows'
+		});
+		$sponsor_selectors = $('.sponsor-filter >li>a');
+		$sponsor_selectors.on('click', function(){
+			$sponsor_selectors.removeClass('active');
+			$(this).addClass('active');
+			var selector = $(this).attr('data-filter');
+			$sponsor.isotope({ filter: selector });
+			return false;
+		});
+	});
 });
