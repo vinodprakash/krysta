@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :registers
+
   get 'home/index'
   root :to => 'home#index'
 

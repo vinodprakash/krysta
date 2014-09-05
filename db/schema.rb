@@ -11,6 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20140905174344) do
+
+  create_table "registers", force: true do |t|
+    t.string   "name"
+    t.integer  "register_no"
+    t.text     "college_name"
+    t.text     "dept_name"
+    t.integer  "mob_no"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

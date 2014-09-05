@@ -1,4 +1,5 @@
 class HomeController < ApplicationController
   def index
-  end
+  @register = Register.new
+   end
 end
