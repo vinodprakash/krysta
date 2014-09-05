@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140905174344) do
+ActiveRecord::Schema.define(version: 20140905202304) do
 
   create_table "registers", force: true do |t|
     t.string   "name"
@@ -19,6 +19,17 @@ ActiveRecord::Schema.define(version: 20140905174344) do
     t.text     "college_name"
     t.text     "dept_name"
     t.integer  "mob_no"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "users", force: true do |t|
+    t.string   "name"
+    t.string   "email"
+    t.string   "register_no"
+    t.string   "college_name"
+    t.string   "dept_name"
+    t.string   "mob_no"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
