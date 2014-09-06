@@ -1,5 +1,43 @@
 <h1>Registration Form</h1>
 
-<%= render '/users/form' %>
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
 
-<%#= link_to 'Back', users_path %>
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%#= f.label : %><br>
+   <%= f.text_field :name, :class => 'input-xlarge', placeholder: 'Full Name' %>
+  </div>
+  <div class="field">
+    <%#= f.label : %><br>
+  <%= f.text_field :email, :class => 'input-xlarge', placeholder: 'Email-id' %>
+  </div>
+  <div class="field">
+    <%#= f.label : %><br>
+  <%= f.text_field :register_no, :class => 'input-xlarge', placeholder: 'Register number' %>
+  </div>
+  <div class="field">
+    <%#= f.label : %><br>
+ <%= f.text_field :college_name, :class => 'input-xlarge', placeholder: 'College Name' %>
+  </div>
+  <div class="field">
+<br>
+ <%= f.text_field :dept_name, :class => 'input-xlarge', placeholder: 'Department' %>
+  </div>
+  <div class="field">
+    <%#= f.label : %><br>
+ <%= f.text_field :mob_no, :class => 'input-xlarge', placeholder: 'Contact Number' %>
+  </div> <br>
+  <div class="actions">
+    <%= f.submit "Register", class: 'button' %>
+  </div>
+<% end %>

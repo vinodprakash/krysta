@@ -12,29 +12,29 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%#= f.label : %><br>
+   <%= f.text_field :name, :class => 'input-xlarge', placeholder: 'Full Name' %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
-    <%= f.text_field :email %>
+    <%#= f.label : %><br>
+  <%= f.text_field :email, :class => 'input-xlarge', placeholder: 'Email-id' %>
   </div>
   <div class="field">
-    <%= f.label :register_no %><br>
-    <%= f.text_field :register_no %>
+    <%#= f.label : %><br>
+  <%= f.text_field :register_no, :class => 'input-xlarge', placeholder: 'Register number' %>
   </div>
   <div class="field">
-    <%= f.label :college_name %><br>
-    <%= f.text_field :college_name %>
+    <%#= f.label : %><br>
+ <%= f.text_field :college_name, :class => 'input-xlarge', placeholder: 'College Name' %>
   </div>
   <div class="field">
-    <%= f.label :dept_name %><br>
-    <%= f.text_field :dept_name %>
+<br>
+ <%= f.text_field :dept_name, :class => 'input-xlarge', placeholder: 'Department' %>
   </div>
   <div class="field">
-    <%= f.label :mob_no %><br>
-    <%= f.text_field :mob_no %>
-  </div>
+    <%#= f.label : %><br>
+ <%= f.text_field :mob_no, :class => 'input-xlarge', placeholder: 'Contact Number' %>
+  </div> <br>
   <div class="actions">
     <%= f.submit "Register", class: 'button' %>
   </div>

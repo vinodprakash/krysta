@@ -11,4 +11,8 @@ class UserMailer < ActionMailer::Base
     @user = user
     mail(to: 'workshop@quanta.net.in', subject: 'User Registered')
   end
+  def message_email(contact)
+    @contact = contact
+    mail(to: 'workshop@quanta.net.in', subject: 'Message')
+  end
 end
