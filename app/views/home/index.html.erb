@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="stylesheets/font-awesome.min.css" rel="stylesheet">
-    <link href="stylesheets/prettyPhoto.css" rel="stylesheet">
-    <link href="stylesheets/main.css" rel="stylesheet">
+    <title>Xeon | OnePage Responsive Theme</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <script src="js/respond.min.js"></script>
@@ -30,27 +31,28 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
+                      
+
                     </button>
-                    <a class="navbar-brand" href="/">--LOGO--</a>
+                    <a class="navbar-brand" href="index.html"></a>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav">
                         <li class="active"><a href="#main-slider"><i class="icon-home"></i></a></li>
                         <li><a href="#services">Events</a></li>
                         <li><a href="#portfolio">Gallery</a></li>
-                        <li><a href="#workshop">Workshop</a></li>
+                        <li><a href="#pricing">Workshop</a></li>
                         <li><a href="#about-us">About Us</a></li>
                         <li><a href="#sponsor">Sponsors</a></li>
-                        <li><a href="#contact">Register</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </header><!--/#header-->
 
-
     <section id="main-slider" class="carousel">
-       <div class="center"><% if notice %>
+        <div class="center"><% if notice %>
  <div class="alert alert-success">
     <a href="#" class="close" data-dismiss="alert">&times;</a>
     <strong> Your Registration is success.</strong>
@@ -86,7 +88,7 @@
     </section><!--/#main-slider-->
 
     <section id="services">
-        <div class="container">
+       <div class="container">
             <div class="box first">
                 <div class="row">
                 <div class="center gap">
@@ -99,7 +101,7 @@
     </section><!--/#services-->
 
     <section id="portfolio">
-        <div class="container">
+       <div class="container">
             <div class="box">
                 <div class="center gap">
                     <h2>Gallery</h2>
@@ -282,27 +284,50 @@
         </div><!--/.container-->
     </section><!--/#portfolio-->
 
-    <section id="workshop">
+    <section id="pricing">
         <div class="container">
             <div class="box">
                 <div class="center">
                     <h2>Workshop</h2>
                     <p class="lead">“Life is made of ever so many partings welded together” -  Charles Dickens<br><br>Learn about the science and art of industrial welding techniques as you build and expand your skills during the course of this one day workshop. Materialize the welder within you with the guest lectures to be given by reputed professionals in the field of welding. Become versed in welding techniques such as friction stir welding and gas tungsten arc welding with live demonstrations to be performed by experienced welders. Get a clear insight into the microstructural features of the weldment.</p>
-                  <a href="#" data-reveal-id="firstModal" class="btn btn-success btn-lg" >Click here to register</a>
-                                <div id="firstModal" class="reveal-modal" data-reveal>
-                                 <%= render '/users/new'%>
-           
-                                  <a onclick="history.go(-0);return true;" class="close-reveal-modal">&#215;</a>
-                                </div> 
+                 
+
+<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+  Click here to Register
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+      <%= render '/users/new'%> 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
                  </div><!--/.center-->   
                 <div class="big-gap"></div>
                 
             </div> 
         </div>
-    </section><!--/#workshop-->
+    </section><!--/#pricing-->
 
-   <section id="about-us">
-        <div class="container">
+    <section id="about-us">
+       <div class="container">
             <div class="box">
                 <div class="center">
                     <h2>Meet the Team</h2>
@@ -368,6 +393,7 @@
             </div><!--/.box-->
         </div><!--/.container-->
     </section><!--/#about-us-->
+
 
     <section id="sponsor">
         <div class="container">
@@ -537,14 +563,16 @@
                     
                 </ul>   
             </div><!--/.box-->
-        </div><!--/.container-->
+        </div>
     </section><!--/#sponsor-->
+
     <section id="contact">
         <div class="container">
             <div class="box last">
                 <div class="row">
                     <div class="col-sm-6">
-                        <h1>Registration Form</h1>
+                        <h1>Contact Form</h1>
+                        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
                         <div class="status alert alert-success" style="display: none"></div>
                         <form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php" role="form">
                             <div class="row">
@@ -560,54 +588,47 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-12">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Register number">
+                                        <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Message"></textarea>
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="College name">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Department name">
-                                    </div>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" required="required" placeholder="Mobile number">
-                                    </div>
-                                    <div class="form-group">
-                                        <button type="submit" class="btn btn-danger btn-lg">Register</button>
+                                        <button type="submit" class="btn btn-danger btn-lg">Send Message</button>
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div><!--/.col-sm-6-->
                     <div class="col-sm-6">
-                        <h1>Our Address</h1>
+                        
                         <div class="row">
                             <div class="col-md-6">
+                            <h3>Our Address</h3>
                                 <address>
                                     <strong>Department of mechanical engineering,<br> CEG , Anna University,<br> Chennai – 25.</strong><br>
                                     
-                                    <abbr title="Phone">P:</abbr> --
+                                    <abbr title="Phone"></abbr> Ph : 9876543210
                                 </address>
                             </div>
-                            
-                        </div>
-                        <h1>Connect with us</h1>
-                        <div class="row">
                             <div class="col-md-6">
+                             <h3>Connect with us</h3>
                                 <ul class="social">
                                     <li><a href="#"><i class="icon-facebook icon-social"></i> Facebook</a></li>
                                     <li><a href="#"><i class="icon-google-plus icon-social"></i> Google Plus</a></li>
                                     <li><a href="#"><i class="icon-pinterest icon-social"></i> Pinterest</a></li>
                                 </ul>
                             </div>
-                            <div class="col-md-6">
-                                <ul class="social">
-                                    <li><a href="#"><i class="icon-linkedin icon-social"></i> Linkedin</a></li>
-                                    <li><a href="#"><i class="icon-twitter icon-social"></i> Twitter</a></li>
-                                    <li><a href="#"><i class="icon-youtube icon-social"></i> Youtube</a></li>
-                                </ul>
+                        </div>
+                        <h1>Maps</h1>
+                        <div class="row">
+                            <div class="col-md-10">
+                               
+                    <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
+                    <iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=13.011028500000000000,80.235018399999940000&amp;spn=80.235018399999940000,13.011028500000000000&amp;t=m&amp;z=4&amp;output=embed"></iframe>
+               
+
                             </div>
+                           
                         </div>
                     </div><!--/.col-sm-6-->
                 </div><!--/.row-->
@@ -619,7 +640,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-6">
-                    &copy; 2014 <a target="_blank" href="http://quanta.net.in" title="quanta">Krysta</a>. All Rights Reserved.
+                    &copy; 2013 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
                 </div>
                 <div class="col-sm-6">
                     <img class="pull-right" src="images/shapebootstrap.png" alt="ShapeBootstrap" title="ShapeBootstrap">
@@ -628,10 +649,10 @@
         </div>
     </footer><!--/#footer-->
 
-    <script src="javascripts/jquery.js"></script>
-    <script src="javascripts/bootstrap.min.js"></script>
-    <script src="javascripts/jquery.isotope.min.js"></script>
-    <script src="javascripts/jquery.prettyPhoto.js"></script>
-    <script src="javascripts/main.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
