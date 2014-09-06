@@ -13,16 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20140905202304) do
 
-  create_table "registers", force: true do |t|
-    t.string   "name"
-    t.integer  "register_no"
-    t.text     "college_name"
-    t.text     "dept_name"
-    t.integer  "mob_no"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "users", force: true do |t|
     t.string   "name"
     t.string   "email"
