@@ -303,12 +303,12 @@
 </button>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" >
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">Registration Form</h4>
       </div>
       <div class="modal-body">
       <%= render '/users/new'%> 
@@ -577,31 +577,27 @@
                 <div class="row">
                     <div class="col-sm-12">
                        <div class="col-md-4">
-                        <h1>Contact Us</h1>
                          <%= render '/contacts/new'%>
                          </div>
                         <div class="col-md-4">
-
-                         <h3>Connect with us</h3>
+                            <h1>Connect with Us</h1>
                                 <ul class="social">
                                     <li><a href="#"><i class="icon-facebook icon-social"></i> Facebook</a></li>
                                     <li><a href="#"><i class="icon-google-plus icon-social"></i> Google Plus</a></li>
                                     <li><a href="#"><i class="icon-pinterest icon-social"></i> Pinterest</a></li>
                                 </ul>
-                                </div>
+                        </div>
                         <div class="col-md-4">
-                        <div class="row">
-                            
-                            <h3>Our Address</h3>
+                        <div class="row">      
+                            <h1>Our Address</h1>
                                 <address>
                                     <strong>Department of Mechanical Engineering,<br> CEG , Anna University,<br> Chennai – 25.</strong><br>
                                     
-                                    <abbr title="Phone"></abbr> Ph : 9876543210
+                                    <abbr title="Phone">Ph: </abbr>9876543210
                                 </address>
-                            </div>
-                            
                         </div>
-                        </div><!--/.col-sm-6-->
+                        </div>
+                    </div><!--/.col-sm-6-->
                     
                 </div><!--/.row-->
             </div><!--/.box-->

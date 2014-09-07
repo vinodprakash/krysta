@@ -1,5 +1,3 @@
-<h1>Registration Form</h1>
-
 <%= form_for(@user) do |f| %>
   <% if @user.errors.any? %>
     <div id="error_explanation">
@@ -13,31 +11,90 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%#= f.label : %><br>
-   <%= f.text_field :name, :class => 'input-xlarge', placeholder: 'Full Name' %>
-  </div>
-  <div class="field">
-    <%#= f.label : %><br>
-  <%= f.text_field :email, :class => 'input-xlarge', placeholder: 'Email-id' %>
-  </div>
-  <div class="field">
-    <%#= f.label : %><br>
-  <%= f.text_field :register_no, :class => 'input-xlarge', placeholder: 'Register number' %>
-  </div>
-  <div class="field">
-    <%#= f.label : %><br>
- <%= f.text_field :college_name, :class => 'input-xlarge', placeholder: 'College Name' %>
-  </div>
-  <div class="field">
-<br>
- <%= f.text_field :dept_name, :class => 'input-xlarge', placeholder: 'Department' %>
-  </div>
-  <div class="field">
-    <%#= f.label : %><br>
- <%= f.text_field :mob_no, :class => 'input-xlarge', placeholder: 'Contact Number' %>
-  </div> <br>
-  <div class="actions">
-    <%= f.submit "Register", class: 'button' %>
-  </div>
+<h2>Registration Form</h2>
+
+
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">       
+          <label>Name:</label>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="form-group">
+          <input type="text" name="user[name]"class="form-control" required="required">       
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">        
+          <label>Email:</label>         
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="form-group">         
+          <input type="text" name="user[email]"class="form-control" required="required">       
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label>Register Number:</label>   
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="form-group">
+          <input type="text" name="user[register_no]"class="form-control" required="required">  
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">       
+          <label>College Name:</label>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="form-group">
+          <input type="text" name="user[college_name]"class="form-control" required="required">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">     
+          <label>Department Name:</label>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="form-group">
+          <input type="text" name="user[dept_name]"class="form-control" required="required">   
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="form-group">    
+          <label>Mobile Number:</label>
+        </div>
+      </div>
+      <div class="col-sm-8">
+        <div class="form-group">
+          <input type="text" name="user[mob_no]"class="form-control" required="required">  
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+          <div class="col-sm-12">
+          <div class="form-group">
+          <button type="submit" class="btn btn-success btn-lg">Register</button>
+          </div>
+          </div>
+    </div>
+
 <% end %>
