@@ -5,10 +5,10 @@ development:
   user: root
 production: 
   adapter: postgresql
-  database: d7e66j2fhtrdp4
-  host: ec2-54-204-41-178.compute-1.amazonaws.com
-  password: xVfIqZ1Si6p6yy67X7aI891PWV
-  user: eovtvaoveswspu
+  database: deif59mhimcl7p
+  host: ec2-23-21-101-129.compute-1.amazonaws.com
+  password: UWFkOrHBPdLE68uUKAU4qXn6A8
+  user: uurcnkqfutvrwq
 test: 
   adapter: mysql
   database: test
