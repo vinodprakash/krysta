@@ -1,15 +1,14 @@
-default: &default
-  adapter: sqlite3
-  pool: 5
-  timeout: 5000
-
 development:
-  <<: *default
-  database: db/development.sqlite3
-
+  adapter: mysql
+  database: test
+  user: 'root'
+  password: 123456
 test:
-  <<: *default
-  database: db/test.sqlite3
+  adapter: mysql
+  database: test
+  user: 'root'
+  password: 123456
+  
 
 production:
   adapter: pg
@@ -17,3 +16,4 @@ production:
   database: d7e66j2fhtrdp4   
   user: 'eovtvaoveswspu'
   password: 'xVfIqZ1Si6p6yy67X7aI891PWV'
+  
