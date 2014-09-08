@@ -8,8 +8,6 @@ test:
   database: test
   user: 'root'
   password: 123456
-  
-
 production:
   adapter: pg
   host: ec2-54-204-41-178.compute-1.amazonaws.com
