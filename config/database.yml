@@ -1,17 +1,16 @@
-development:
+development: 
   adapter: mysql
   database: test
-  user: 'root'
   password: 123456
-test:
-  adapter: mysql
-  database: test
-  user: 'root'
-  password: 123456
-production:
+  user: root
+production: 
   adapter: pg
+  database: d7e66j2fhtrdp4
   host: ec2-54-204-41-178.compute-1.amazonaws.com
-  database: d7e66j2fhtrdp4   
-  user: 'eovtvaoveswspu'
-  password: 'xVfIqZ1Si6p6yy67X7aI891PWV'
-  
+  password: xVfIqZ1Si6p6yy67X7aI891PWV
+  user: eovtvaoveswspu
+test: 
+  adapter: mysql
+  database: test
+  password: 123456
+  user: root
