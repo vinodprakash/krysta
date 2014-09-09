@@ -13,5 +13,5 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'mailcatcher'
-gem 'validates_phone_number','~> 2.0.1'
 gem 'email_validator', :require => 'email_validator/strict'
+gem 'validates_phone_number','~> 2.0.1'
