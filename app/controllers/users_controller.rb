@@ -36,11 +36,12 @@ class UsersController < ApplicationController
         format.html { redirect_to '/', notice: 'Your Registration is Successfull' }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html {  redirect_to '/', notice: 'Invalid Email Id . Your Registration is Unsuccessful.' }
+        format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
   end
+
 
   # PATCH/PUT /users/1
   # PATCH/PUT /users/1.json

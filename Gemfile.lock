@@ -37,8 +37,6 @@ GEM
       execjs
     coffee-script-source (1.8.0)
     daemons (1.1.9)
-    email_validator (1.4.0)
-      activemodel
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (2.2.1)
@@ -147,7 +145,6 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
-  email_validator
   jbuilder (~> 2.0)
   jquery-rails
   mailcatcher
