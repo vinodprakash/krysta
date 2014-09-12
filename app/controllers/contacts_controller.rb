@@ -32,10 +32,10 @@ redirect_to root_path
     respond_to do |format|
       UserMailer.message_email(@contact).deliver
       if @contact.save
-        format.html { redirect_to @contact, notice: 'Your query has been forwarded. Please wait for our reply”' }
+        format.html { redirect_to @contact, notice: 'Your query has been forwarded. Please wait for our reply'}
         format.json { render :show, status: :created, location: @contact }
       else
-        format.html { render :new }
+        format.html { redirect_to @contact, notice: 'Email-id is invalid'}
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
     end
