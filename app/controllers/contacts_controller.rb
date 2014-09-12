@@ -35,7 +35,7 @@ redirect_to root_path
         format.html { redirect_to @contact, notice: 'Your query has been forwarded. Please wait for our reply'}
         format.json { render :show, status: :created, location: @contact }
       else
-        format.html { redirect_to @contact, notice: 'Email-id is invalid'}
+        format.html { redirect_to @contact, alert: 'Email-id is invalid'}
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
     end

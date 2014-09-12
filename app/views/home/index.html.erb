@@ -50,12 +50,20 @@
     </header><!--/#header-->
 
     <section id="main-slider" class="carousel">
-        <div class="center"><% if notice %>
- <div class="alert alert-success">
-    <a href="#" class="close" data-dismiss="alert">&times;</a>
-    <strong> <%= notice%></strong>
-</div> 
-<% end %></div>
+	    <div class="center">
+		    <% if notice %>
+			    <div class="alert alert-success">
+			    <a href="#" class="close" data-dismiss="alert">&times;</a>
+			    <strong> <%= notice%></strong>
+			    </div> 
+		    <% end %>
+		    <%if alert %>
+			     <div class="alert alert-success">    
+		             <a href="#" class="close" data-dismiss="alert">&times;</a>    
+		             <strong> <%= alert%></strong>
+		             </div>
+		    <%end%>    
+	    </div>
         <div class="carousel-inner">
 
             <div class="item active"> 
