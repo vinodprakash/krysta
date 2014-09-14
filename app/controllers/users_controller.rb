@@ -5,13 +5,12 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
-    redirect_to root_path
   end
 
   # GET /users/1
   # GET /users/1.json
   def show
-   redirect_to home_index_path
+   
   end
 
   # GET /users/new
@@ -21,7 +20,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/edit
   def edit
-   redirect_to home_index_path
+   
   end
 
   # POST /users
@@ -36,7 +35,7 @@ class UsersController < ApplicationController
         format.html { redirect_to '/', notice: 'Your Registration is Successfull' }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { redirect_to '/', alert: 'Email-id is invalid' }
+        format.html { render :new }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
@@ -51,7 +50,7 @@ class UsersController < ApplicationController
         format.html { redirect_to home_index_path, notice: 'User was successfully updated.' }
         format.json { render :show, status: :ok, location: @user }
       else
-        format.html { redirect_to home_index_path, alert:'Email-id is invalid' }
+        format.html { render :edit }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end

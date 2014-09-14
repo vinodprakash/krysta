@@ -5,13 +5,12 @@ class ContactsController < ApplicationController
   # GET /contacts.json
   def index
     @contacts = Contact.all
-redirect_to root_path
   end
 
   # GET /contacts/1
   # GET /contacts/1.json
   def show
-redirect_to root_path
+
   end
 
   # GET /contacts/new
@@ -21,7 +20,7 @@ redirect_to root_path
 
   # GET /contacts/1/edit
   def edit
-  redirect_to root_path
+  
   end
 
   # POST /contacts
@@ -35,7 +34,7 @@ redirect_to root_path
         format.html { redirect_to '/', notice: 'Your query has been forwarded. Please wait for our reply' }
         format.json { render :show, status: :created, location: @contact }
       else
-        format.html { redirect_to '/', alert: 'Email-id is invalid' }
+        format.html { render :new }
         format.json { render json: @contact.errors, status: :unprocessable_entity }
       end
     end

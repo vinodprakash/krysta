@@ -1,16 +1,16 @@
-development: 
-  adapter: mysql
-  database: test
-  password: 123456
-  user: root
-production: 
+development:
   adapter: postgresql
-  database: deif59mhimcl7p
-  host: ec2-23-21-101-129.compute-1.amazonaws.com
-  password: UWFkOrHBPdLE68uUKAU4qXn6A8
-  user: uurcnkqfutvrwq
-test: 
-  adapter: mysql
-  database: test
-  password: 123456
-  user: root
+  database: my_database_development
+  pool: 5
+  timeout: 5000
+test:
+  adapter: postgresql
+  database: my_database_test
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  database: my_database_production
+  pool: 5
+  timeout: 5000
