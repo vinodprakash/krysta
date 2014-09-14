@@ -560,16 +560,19 @@ a:focus {
   margin-right: 50px;
   margin-left: 20px;
   width: 200px;
-  height: 78px;
-  background: url(../images/logo/logo4.png) no-repeat 0 50%;
+  height: 88px;
+  background: url(../images/logo/logo4.png) no-repeat 0 50%; 
 }
 .navbar-default .navbar-nav > li {
   margin-left: 1px;
 }
+.navbar-brand > img {
+ margin-top: 1px;
+}
 .navbar-default .navbar-nav > li > a {
   padding: 30px 25px;
   font-size: 16px;
-  line-height: 18px;
+  line-height: 28px;
   color: #999;
 }
 .navbar-default .navbar-nav > li > a > i {
