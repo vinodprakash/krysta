@@ -5,12 +5,13 @@ class ContactsController < ApplicationController
   # GET /contacts.json
   def index
     @contacts = Contact.all
+   redirect_to root_path
   end
 
   # GET /contacts/1
   # GET /contacts/1.json
   def show
-
+redirect_to root_path
   end
 
   # GET /contacts/new
@@ -20,7 +21,7 @@ class ContactsController < ApplicationController
 
   # GET /contacts/1/edit
   def edit
-  
+  redirect_to root_path
   end
 
   # POST /contacts

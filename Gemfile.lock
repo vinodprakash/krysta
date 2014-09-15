@@ -62,6 +62,7 @@ GEM
       mail
       sinatra
       skinny (>= 0.1.2)
+      sqlite3-ruby
       thin
     mime-types (1.25.1)
     minitest (5.4.1)
@@ -122,6 +123,9 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
+    sqlite3 (1.3.9)
+    sqlite3-ruby (1.3.3)
+      sqlite3 (>= 1.3.3)
     thin (1.5.1)
       daemons (>= 1.0.9)
       eventmachine (>= 0.12.6)
