@@ -30,8 +30,9 @@ redirect_to root_path
     @contact = Contact.new(contact_params)
 
     respond_to do |format|
-      UserMailer.message_email(@contact).deliver
+      
       if @contact.save
+        UserMailer.message_email(@contact).deliver
         format.html { redirect_to '/', notice: 'Your query has been forwarded. Please wait for our reply' }
         format.json { render :show, status: :created, location: @contact }
       else

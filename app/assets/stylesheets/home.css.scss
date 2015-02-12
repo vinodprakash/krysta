@@ -69,7 +69,7 @@
 .overlay {
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: 100%;
     z-index: 2;
     background-color: #080d15;
     opacity: .7;
@@ -101,13 +101,13 @@
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url("/img/1.jpg"); 
+  background-image: url("/img/1c.jpg"); 
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url("/img/2.jpg"); 
+  background-image: url("/img/2c.jpg"); 
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url("/img/3.jpg"); 
+  background-image: url("/img/3.png"); 
 }
 
 /********************************/
