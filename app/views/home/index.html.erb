@@ -52,12 +52,15 @@
     <div class="col-md-1 col-sm-6 portfolio-item">
     <a href="#page-top"><img src="/img/qlogo.png" width="50" height="50"></a> 
     </div>
-    <div class="col-md-1 col-sm-6 portfolio-item">
+    <div class="col-md-2 col-sm-6 portfolio-item">
     <span class="navbar-header page-scroll"><a  align="left" class="navbar-brand page-scroll" href="#page-top">Quanta</a></span>
+    </div>
+    <div class="col-md-1 col-sm-6 portfolio-item">
+    <a href="#page-top"><img src="/img/CEG_main_logo.png" width="50" height="50"></a> 
     </div>
    
 
-	<div class="col-md-10 col-sm-6 portfolio-item">    
+	<div class="col-md-8 col-sm-6 portfolio-item">    
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right" style="color: #ffd700;">
@@ -93,11 +96,32 @@
   <div class="carousel-inner">
     <div class="item slides active">
       <div class="slide-1"></div>
+      <div class="hero">
+        <hgroup>
+        	<img src="/img/3c.png" width="150" height="150">
+        	
+            <h1 style="font-size:50px; color:#003366;">SMSE Presents</h1>        
+            <h3>QUANTA ’15</h3>
+
+        </hgroup>
+      </div>
       
+
+		
+
+
     </div>
     <div class="item slides">
       <div class="slide-2"></div>
+      <div class="hero">
+        <hgroup>
+            <h2 style="font-size:30px;">MINIATURIZING OMNIPOTENCE</h2>    
+            <h3>March 11-14</h3>
+        </hgroup>
+      </div>
       
+
+
     </div>
     
    
@@ -278,16 +302,7 @@
                             </div>
                         </div>         
                     </li><!--/.portfolio-item-->
-                    <li class="portfolio-item wordpress k14">
-                        <div class="item-inner">
-                            <div class="portfolio-image">
-                                <img src="/img/gallery/4.jpg" alt="">
-                                <div class="overlay">
-                                    <a class="preview btn btn-link" title="" href="/img/gallery/4.jpg"><img src="/img/eye.png" width="20" height="20"></a>           
-                                </div>   
-                            </div>
-                        </div>         
-                    </li><!--/.portfolio-item-->
+                    
                     <li class="portfolio-item wordpress inaug">
                         <div class="item-inner">
                             <div class="portfolio-image">
@@ -497,11 +512,12 @@
 	</div>
    
     </div>
-    <div class="col-md-6">
+    <div class="col-md-7">
     <p style="font-size:18px;">
-    	A country’s wealth is determined by its people, whereas the safety of people lies in the hands of defense. In order to achieve the revolutionary new defense capabilities offered by materials science and engineering, innovative management to reduce the risks associated with translating research results will be needed along with R&D.  While payoff is expected to be high from the promising areas of materials research, many of the benefits are likely to be evolutionary. Nevertheless, failure to invest in more speculative areas of research could lead to undesired technological surprises. Thereupon it becomes essential to seek knowledge about the defense materials. An interesting topic, join the herd to have the clear cut idea of materials in defense research.
+    	To save the country from the external invasion and from the internal disturbances awell maintained defense system is indispensable. Big Powers are stored with atomic weapons; however, the nightmare of a long-drawn war of attrition has given place to fear of a war of annihilation. This frightening possibility should act as a salutary check on war-mindedness in this world. For this reason it does not seem wise or expedient for underdeveloped countries to spend crores of rupees for national defense preparedness and thereby deprive the common people of necessary financial help. So it becomes increasingly important to make expenditure for Defense within its limits to meet the security needs. As the saying goes “Necessity is the mother of invention” our necessity is to provide security at an
     	</p>
     	</div>
+    	<p style="font-size:18px;"> affordable limit lead to the advent of Advance Materials in Defense. India has a large pool of technology related talents, and defense research organizations are doing their part to bring out the best in the Indian Armed Forces, by either collaborating with foreign companies or developing technology and designs indigenously. Ever wondered the various metallurgical advancements in defense research, come quanta 15’ and hear it out from eminent person from various institutions and organization.</p>
     </div>
     </div>
      </div>
@@ -558,14 +574,37 @@
 	</button>
 	</div> -->
 	<br><br>
+
+	<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Registeration
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <%= render '/registers/new'%> 
+      </div>
+    </div>
+  </div>
+  </div>
 	<p align="center" style="font-size:20px;"><strong>Register Soon….!!!!!!!!!</strong></p>
+	<div class="row" align="center">
+			   <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">
+	Click here to Register
+	</button>
+	</div>
+
 
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" >
 	<div class="modal-dialog">
 	<div class="modal-content">
 	<div class="modal-body">
-	<%= render '/users/new'%> 
+	<%= render '/registers/new'%> 
 	</div>
 	<div class="modal-footer">
 	<button type="button" style="align:left;" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -592,7 +631,9 @@
       </div>
       <div class="col-md-6">
         <p style="font-size:22px;">THE SOCIETY OF MATERIALS SCIENCE ENGINEERS UNDER THE GUIDANCE OF DEPARTMENT OF MECHANICAL ENGINEERING, CEG, ANNA UNIVERSITY, BRINGS YOU THE MOST SAVVY SYMPOSIUM EVER.... QUANTA’15.. AN ADORABLE ALLOY OF BRAIN-RACKING AND SENSE-PLEASING EVENTS AND AN INTER COLLEGIATE WORKSHOP ON ‘MATERIALS IN DEFENCE RESEARCH’ AND ‘MATERIAL MODELING AND SIMULATION’… COME...KNOW YOURSELF...RECREATE YOUR SELF</p>
+        <br>
       </div>
+      <p style="font-size:18px;">Quanta events are over the years have received accolades and thundering applausefrom the participants and guests with nail biting climax and photo finish score lines. We take pride in inviting you to this coveted Quanta events to hone your innovative skills and to have an awe inspiring experience. Cant wait rgt!!!! One day work on “Materials in Defense Research” which will illuminate your obscurities hovering over the recent advances in Defense Materials. You will be acquainted about the use of advanced materials that has ameliorated the security provided to the gallant fighters across borders and how it has helped Defense organizations reach their pinnacle from nadir.A half day work shop on “Material Modeling and Stimulation” that would help you to learn and crack hoaxes wafting over this subject. These workshops will be conducted in the presence of articulate speakers from esteemed and reputed institutions.</p>
      
     </div>
   </div>
@@ -603,7 +644,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading">Sponsors</h2>
+        <h2 class="section-heading">Previous Sponsors</h2>
         <div class="line"></div>
 
 
@@ -877,7 +918,7 @@
 </footer>
 
 <!-- Portfolio Modals --> 
-<!-- Use the modals below to showcase details about your portfolio projects! --> 
+<!-- Use the modals below to showcase details about your portfolio s! --> 
 
 <!-- Portfolio Modal 1 -->
 <div class="portfolio-modal modal fade" id="eventModal1" tabindex="-1" role="dialog" aria-hidden="true">
@@ -891,7 +932,7 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
             
 
 
@@ -906,7 +947,7 @@
             <strong>CONTACT:</strong>
               <li>Raja: 9629314522</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -926,7 +967,7 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>ENGINEERING CONNECTIONS</h2>
@@ -946,7 +987,7 @@
 			<li>Arungopal.K.P. 9789924647</li>
 			<li>Mohammed Burhanuddeen 9176439878</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -965,7 +1006,7 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>MEGATRONITE</h2>
@@ -1000,7 +1041,7 @@ A theme will be given for the same on the day of the event.</p>
 			<li>Madhubala: 875456715</li>
 			<li>Swetha:8903677432</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -1021,7 +1062,7 @@ A theme will be given for the same on the day of the event.</p>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>NUT AND BOLT</h2>
@@ -1040,7 +1081,7 @@ A theme will be given for the same on the day of the event.</p>
             <strong>CONTACT:</strong> <br>
             <li>B.Priyadarshini - 7502185052</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -1060,7 +1101,7 @@ A theme will be given for the same on the day of the event.</p>
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>INQUISITION</h2>
@@ -1079,7 +1120,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
             <li>Monish Chakravarty R : 9487755515</li>
 			<li>Darvin M S : 9751362867</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -1099,7 +1140,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>PIXEL PERFECT</h2>
@@ -1118,7 +1159,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
             <strong>CONTACT: </strong> <br>
             <li> Denijoe : 7598001602 </li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -1138,7 +1179,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>PAPER PRESENTATION</h2>
@@ -1162,12 +1203,15 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
 			5. Teams will have to deliver their presentation for 10 minutes followed by 5 minutes Q/A session.<br>
 			6. He organizers reserve the right to change/update the rules of the contest at any point of time and will do their best to notify the participants. However, it is ultimately the responsibility of the teams to keep themselves updated.<br>
 			7. Judges' decision is final.<br>
+			<br><br>
+			Send your abstract to <strong>paperpresentation@quanta.net.in</strong> on or before March 5th.
+			<br>
 			
             <ul class="list-inline">
             <strong>CONTACT:</strong> <br>
             <li>Archana – 9940428399</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -1186,7 +1230,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>QUANTA PREMIER LEAGUE</h2>
@@ -1213,7 +1257,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
             <strong>CONTACT:</strong> <br>
             <li>Chandramohan - 7299513307</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -1232,7 +1276,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>HEPHAESTUS ORACLE</h2>
@@ -1248,7 +1292,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
             <strong>CONTACT:</strong> <br>
             <li>Abhilaash - 7845425085</li>
             </ul>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -1267,7 +1311,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>TALAASH</h2>
@@ -1285,7 +1329,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
 			<li>Gokul Ram – 9790748490</li>
             </ul>
             	<p align="center" style="font-size:15px;"> <strong>Coming Soon !!!</strong></p>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>
@@ -1304,7 +1348,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <div class="modal-body"> 
-            <!-- Project Details Go Here -->
+            <!--  Details Go Here -->
            
 
             <h2>CLIQ</h2>
@@ -1335,7 +1379,7 @@ Inquisition or Material Treasure Hunt is wit-based where a team will be given a 
             <li>Karthick – 9677475231</li>
             </ul>
             	<p align="center" style="font-size:15px;"> <strong>Coming Soon !!!</strong></p>
-            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close </button>
           </div>
         </div>
       </div>

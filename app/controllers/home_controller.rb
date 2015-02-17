@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
   def index
-  @user = User.new
+  @register = Register.new
   @contact = Contact.new
    end
 end
