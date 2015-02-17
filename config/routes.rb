@@ -1,6 +1,4 @@
 Rails.application.routes.draw do
-  resources :registers
-
   resources :contacts
 
   resources :users
