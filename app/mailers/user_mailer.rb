@@ -3,8 +3,7 @@ class UserMailer < ActionMailer::Base
  
   def welcome_email(user)
     @user = user
-    @url  = 'http://example.com/login'
-    mail(to: @user.email, subject: 'Welcome to Krysta')
+    mail(to: @user.email, subject: 'Welcome to Quanta')
   end
  
   def admin_email(user)
@@ -13,6 +12,6 @@ class UserMailer < ActionMailer::Base
   end
   def message_email(contact)
     @contact = contact
-    mail(to: 'workshop@quanta.net.in', subject: 'Message')
+    mail(to: 'events@quanta.net.in', subject: 'Message')
   end
 end
