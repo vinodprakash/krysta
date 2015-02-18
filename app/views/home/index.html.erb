@@ -83,9 +83,12 @@
 
 <!-- Header -->
 <header>
+
 	<div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel">
 		<!-- Overlay -->
+
 		<div class="overlay">
+
 
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -94,10 +97,31 @@
 			</ol>
 			<!-- Wrapper for slides -->
 			<div class="carousel-inner">
+
+
 				<div class="item slides active">
+
+
 					<div class="slide-1"></div>
+
 					<div class="hero">
 						<hgroup>
+						<div class="center">
+							<% if notice %>
+
+								<div class="alert alert-success">
+								<a href="#" class="close" data-dismiss="alert">&times;</a>
+
+								<strong> <%= notice%></strong>
+							</div> 
+						<% end %>
+							<%if alert %>
+								<div class="alert alert-danger">    
+								<a href="#" class="close" data-dismiss="alert">&times;</a>    
+								<strong> <%= alert%></strong>
+							</div>
+						<%end%>    
+						</div>
 						<img src="/img/3c.png" width="150" height="150">
 
 						<h1 style="font-size:50px; color:#003366;">SMSE Presents</h1>        
@@ -115,6 +139,7 @@
 					<div class="slide-2"></div>
 					<div class="hero">
 						<hgroup>
+
 						<h2 style="font-size:30px;">MINIATURIZING OMNIPOTENCE</h2>    
 						<h3>March 11-14</h3>
 						</hgroup>
@@ -128,6 +153,7 @@
 			</div> 
 		</div>
 	</div>
+
 
 
 </header>
@@ -582,7 +608,6 @@
 			Click here to Register
 		</button>
 	</div>
-
 
 	<!-- Modal -->
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false" >
@@ -1386,7 +1411,6 @@
 
 <!-- Contact Form JavaScript --> 
 <script src="/js/jqBootstrapValidation.js"></script> 
-<script src="/js/contact_me.js"></script> 
 
 <!-- Custom Theme JavaScript --> 
 <script src="/js/five.js"></script>

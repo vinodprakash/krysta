@@ -17,6 +17,7 @@ redirect_to root_path
   # GET /contacts/new
   def new
     @contact = Contact.new
+    redirect_to root_path
   end
 
   # GET /contacts/1/edit
