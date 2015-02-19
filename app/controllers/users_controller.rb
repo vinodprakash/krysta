@@ -5,6 +5,7 @@ class UsersController < ApplicationController
   # GET /users.json
   def index
     @users = User.all
+    redirect_to root_path
   end
 
   # GET /users/1
@@ -32,7 +33,7 @@ class UsersController < ApplicationController
       if @user.save
          UserMailer.welcome_email(@user).deliver
         UserMailer.admin_email(@user).deliver
-        format.html { redirect_to '/', notice: 'Your Registration is Successfull' }
+        format.html { redirect_to root_path, notice: 'Your Registration is Successfull' }
         format.json { render :show, status: :created, location: @user }
       else
         format.html { render :new }
