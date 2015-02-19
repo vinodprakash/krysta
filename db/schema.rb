@@ -35,7 +35,6 @@ ActiveRecord::Schema.define(version: 20150219112702) do
     t.string   "mob_no"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "workshop"
   end
 
 end
