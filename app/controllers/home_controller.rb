@@ -3,4 +3,7 @@ class HomeController < ApplicationController
   @user = User.new
   @contact = Contact.new
    end
+  def talaash
+	redirect_to ("http://talaash.quanta.net.in")
+  end
 end
